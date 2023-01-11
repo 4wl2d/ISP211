@@ -8,6 +8,7 @@
     <fragment
         android:id="@+id/Hub"
         android:label="@string/hub"
+        android:name="ind.kait.isp211.Hub"
         tools:layout="@layout/hub">
 
         <action
@@ -30,6 +31,7 @@
     <fragment
         android:id="@+id/Monday"
         android:label="@string/monday"
+        android:name="ind.kait.isp211.Days.Monday"
         tools:layout="@layout/monday">
 
         <action
@@ -40,7 +42,8 @@
     <fragment
         android:id="@+id/Wednesday"
         android:label="@string/wednesday"
-        tools:layout="@layout/monday">
+        android:name="ind.kait.isp211.Days.Wednesday"
+        tools:layout="@layout/wednesday">
 
         <action
             android:id="@+id/action_Day_to_Hub"
@@ -50,7 +53,8 @@
     <fragment
         android:id="@+id/Thursday"
         android:label="@string/thursday"
-        tools:layout="@layout/monday">
+        android:name="ind.kait.isp211.Days.Thursday"
+        tools:layout="@layout/thursday">
 
         <action
             android:id="@+id/action_Day_to_Hub"
@@ -60,7 +64,8 @@
     <fragment
         android:id="@+id/Friday"
         android:label="@string/friday"
-        tools:layout="@layout/monday">
+        android:name="ind.kait.isp211.Days.Friday"
+        tools:layout="@layout/friday">
 
         <action
             android:id="@+id/action_Day_to_Hub"
@@ -70,7 +75,8 @@
     <fragment
         android:id="@+id/Tuesday"
         android:label="@string/tuesday"
-        tools:layout="@layout/monday">
+        android:name="ind.kait.isp211.Days.Tuesday"
+        tools:layout="@layout/tuesday">
 
         <action
             android:id="@+id/action_Day_to_Hub"
