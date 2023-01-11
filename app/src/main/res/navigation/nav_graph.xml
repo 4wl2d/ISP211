@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Hub">
+
+    <fragment
+        android:id="@+id/Hub"
+        android:label="@string/hub"
+        tools:layout="@layout/hub">
+
+        <action
+            android:id="@+id/action_Hub_to_Monday"
+            app:destination="@id/Monday" />
+        <action
+            android:id="@+id/action_Hub_to_Wednesday"
+            app:destination="@id/Wednesday" />
+        <action
+            android:id="@+id/action_Hub_to_Tuesday"
+            app:destination="@id/Tuesday" />
+        <action
+            android:id="@+id/action_Hub_to_Thursday"
+            app:destination="@id/Thursday" />
+        <action
+            android:id="@+id/action_Hub_to_Friday"
+            app:destination="@id/Friday" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Monday"
+        android:label="@string/monday"
+        tools:layout="@layout/monday">
+
+        <action
+            android:id="@+id/action_Day_to_Hub"
+            app:destination="@id/Hub" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Wednesday"
+        android:label="@string/wednesday"
+        tools:layout="@layout/monday">
+
+        <action
+            android:id="@+id/action_Day_to_Hub"
+            app:destination="@id/Hub" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Thursday"
+        android:label="@string/thursday"
+        tools:layout="@layout/monday">
+
+        <action
+            android:id="@+id/action_Day_to_Hub"
+            app:destination="@id/Hub" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Friday"
+        android:label="@string/friday"
+        tools:layout="@layout/monday">
+
+        <action
+            android:id="@+id/action_Day_to_Hub"
+            app:destination="@id/Hub" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Tuesday"
+        android:label="@string/tuesday"
+        tools:layout="@layout/monday">
+
+        <action
+            android:id="@+id/action_Day_to_Hub"
+            app:destination="@id/Hub" />
+    </fragment>
+</navigation>

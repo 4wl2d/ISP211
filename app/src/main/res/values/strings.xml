@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Расписание</string>
+    <string name="hub">Хаб</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+</resources>
