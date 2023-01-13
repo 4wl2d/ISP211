@@ -30,11 +30,19 @@ public class Monday extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
+        binding.buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(Monday.this)
                         .navigate(R.id.action_Day_to_Hub);
+            }
+        });
+
+        binding.buttonPeremeni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(Monday.this)
+                        .navigate(R.id.action_Monday_to_Peremeni);
             }
         });
     }

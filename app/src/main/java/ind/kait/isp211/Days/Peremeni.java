@@ -10,11 +10,11 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import ind.kait.isp211.R;
-import ind.kait.isp211.databinding.FridayBinding;
+import ind.kait.isp211.databinding.PeremeniBinding;
 
-public class Friday extends Fragment {
+public class Peremeni extends Fragment {
 
-    private FridayBinding binding;
+    private PeremeniBinding binding;
 
     @Override
     public View onCreateView(
@@ -22,7 +22,7 @@ public class Friday extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FridayBinding.inflate(inflater, container, false);
+        binding = PeremeniBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -30,19 +30,11 @@ public class Friday extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonBack.setOnClickListener(new View.OnClickListener() {
+        binding.buttonHub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(Friday.this)
-                        .navigate(R.id.action_Day_to_Hub);
-            }
-        });
-
-        binding.buttonPeremeni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(Friday.this)
-                        .navigate(R.id.action_Friday_to_Peremeni);
+                NavHostFragment.findNavController(Peremeni.this)
+                        .navigate(R.id.action_Peremeni_to_Hub);
             }
         });
     }

@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_Day_to_Hub"
             app:destination="@id/Hub" />
+        <action
+            android:id="@+id/action_Monday_to_Peremeni"
+            app:destination="@id/Peremeni" />
     </fragment>
 
     <fragment
@@ -48,6 +51,36 @@
         <action
             android:id="@+id/action_Day_to_Hub"
             app:destination="@id/Hub" />
+        <action
+            android:id="@+id/action_Wednesday_to_Peremeni"
+            app:destination="@id/Peremeni" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Peremeni"
+        android:name="ind.kait.isp211.Days.Peremeni"
+        android:label="@string/peremeni"
+        tools:layout="@layout/peremeni">
+
+
+        <action
+            android:id="@+id/action_Peremeni_to_Hub"
+            app:destination="@id/Hub" />
+        <action
+            android:id="@+id/action_Peremeni_to_Monday"
+            app:destination="@id/Monday" />
+        <action
+            android:id="@+id/action_Peremeni_to_Wednesday"
+            app:destination="@id/Wednesday" />
+        <action
+            android:id="@+id/action_Peremeni_to_Tuesday"
+            app:destination="@id/Tuesday" />
+        <action
+            android:id="@+id/action_Peremeni_to_Thursday"
+            app:destination="@id/Thursday" />
+        <action
+            android:id="@+id/action_Peremeni_to_Friday"
+            app:destination="@id/Friday" />
     </fragment>
 
     <fragment
@@ -59,6 +92,9 @@
         <action
             android:id="@+id/action_Day_to_Hub"
             app:destination="@id/Hub" />
+        <action
+            android:id="@+id/action_Thursday_to_Peremeni"
+            app:destination="@id/Peremeni" />
     </fragment>
 
     <fragment
@@ -70,6 +106,9 @@
         <action
             android:id="@+id/action_Day_to_Hub"
             app:destination="@id/Hub" />
+        <action
+            android:id="@+id/action_Friday_to_Peremeni"
+            app:destination="@id/Peremeni" />
     </fragment>
 
     <fragment
@@ -81,5 +120,8 @@
         <action
             android:id="@+id/action_Day_to_Hub"
             app:destination="@id/Hub" />
+        <action
+            android:id="@+id/action_Tuesday_to_Peremeni"
+            app:destination="@id/Peremeni" />
     </fragment>
 </navigation>

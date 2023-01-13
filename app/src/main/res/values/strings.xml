@@ -6,4 +6,6 @@
     <string name="wednesday">Среда</string>
     <string name="thursday">Четверг</string>
     <string name="friday">Пятница</string>
+    <string name="back">Назад</string>
+    <string name="peremeni">Перемены</string>
 </resources>
