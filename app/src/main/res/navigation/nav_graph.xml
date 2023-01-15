@@ -29,6 +29,17 @@
     </fragment>
 
     <fragment
+        android:id="@+id/Peremeni_Monday"
+        android:label="@string/peremeni_monday"
+        android:name="ind.kait.isp211.Days.Peremeni_Monday"
+        tools:layout="@layout/peremeni_monday">
+        <action
+            android:id="@+id/action_Peremeni_Monday_to_Hub"
+            app:destination="@id/Hub" />
+    </fragment>
+
+
+    <fragment
         android:id="@+id/Monday"
         android:label="@string/monday"
         android:name="ind.kait.isp211.Days.Monday"
@@ -38,8 +49,8 @@
             android:id="@+id/action_Day_to_Hub"
             app:destination="@id/Hub" />
         <action
-            android:id="@+id/action_Monday_to_Peremeni"
-            app:destination="@id/Peremeni" />
+            android:id="@+id/action_Monday_to_Peremeni_Monday"
+            app:destination="@id/Peremeni_Monday" />
     </fragment>
 
     <fragment
@@ -66,9 +77,6 @@
         <action
             android:id="@+id/action_Peremeni_to_Hub"
             app:destination="@id/Hub" />
-        <action
-            android:id="@+id/action_Peremeni_to_Monday"
-            app:destination="@id/Monday" />
         <action
             android:id="@+id/action_Peremeni_to_Wednesday"
             app:destination="@id/Wednesday" />
